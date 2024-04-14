@@ -1,0 +1,36 @@
+<div [@routerTransition]>
+    <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
+        <div class="kt-subheader kt-grid__item">
+            <div [class]="containerClass">
+                <div class="kt-subheader__main">
+                    <h3 class="kt-subheader__title">
+                        <span>{{"Danh sách film" | localize}}</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div [class]="containerClass + ' kt-grid__item kt-grid__item--fluid'">
+            <div class="kt-portlet kt-portlet--mobile">
+                <div class="kt-portlet__body  kt-portlet__body--fit">
+                    <p>XEM NGAY NGÀY HÔM NAY ĐỂ THƯỞNG THỨC CÁC BỘ PHIM TUYỆT VỜI NHẤT!</p>
+                </div>
+                <div class="row ">
+                    <div *ngFor="let item of data" class="col-lg-2 col-12 mb-3">
+                        <div class="border shadow p-5 d-flex justify-content-center">
+                            <div class="row">
+                                <div class="">
+                                    <img [src]="'https://' + item.pictureLink" class=""  style="max-width: 200px; max-height: 300px;"/>     
+                                </div>                          
+                                <div class="fw-bold fs-3">{{item.name}}</div>
+                                <div class="fst-italic fs-5">{{item.description}}</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>

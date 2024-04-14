@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ASP.NET ZERO
 
 This repository is configured and used for AspNet Zero Team's development. 
@@ -16,3 +17,8 @@ ____________
 | :--: | :-----------: | :--------: | :----------------------------------------------------------: |
 | 11.1  | 🚧 &thinsp; In Progress | 2022-01-31 | [Open](https://github.com/aspnetzero/aspnet-zero-core/milestone/93)<br>[Closed](https://github.com/aspnetzero/aspnet-zero-core/milestone/93?closed=1) |
 
+=======
+# Quản lý dự án phần mềm thực hành
+- FE: angular
+- main: asp.net core
+>>>>>>> 26ef2c85b5332e8e1203c71e9e6823e246a92425

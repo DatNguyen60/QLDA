@@ -19,4 +19,11 @@ export class ApiService {
     console.log(data);  
     return data;
   }
+  addFilm(filmData: any): Observable<void> {
+    return this.http.post<void>('https://localhost:44301/api/services/app/Film/CreateFilm', filmData);
+  }
+  deleteFilm(filmId: any): Observable<void> {
+    return this.http.delete<void>('https://localhost:44301/api/services/app/Film/DeleteFilm?Id=' + filmId);
+  }
+
 }

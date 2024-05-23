@@ -52,6 +52,7 @@ namespace MyCompanyName.AbpZeroTemplate
     {
         public static void CreateMappings(IMapperConfigurationExpression configuration)
         {
+            configuration.CreateMap<CreateFilmInput, Film>();
             configuration.CreateMap<Film, FilmListDto>();
             configuration.CreateMap<Person, PersonListDto>();
             //Inputs

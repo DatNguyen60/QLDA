@@ -22,6 +22,15 @@ namespace MyCompanyName.AbpZeroTemplate.FilmList
             _filmRepository = filmRepository;
         }
 
+        public async Task CreateFilm(CreateFilmInput input)
+        {
+            var film = ObjectMapper.Map<Film>(input);
+            await _filmRepository.InsertAsync(film);
+        }
+        public async Task DeleteFilm(EntityDto input)
+        {
+            await _filmRepository.DeleteAsync(input.Id);
+        }
         public ListResultDto<FilmListDto> GetFilms(GetPeopleInput input)
         {
             var film = _filmRepository

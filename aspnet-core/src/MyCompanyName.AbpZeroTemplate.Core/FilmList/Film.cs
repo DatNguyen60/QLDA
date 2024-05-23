@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities.Auditing;
+using NUglify.JavaScript.Syntax;
 namespace MyCompanyName.AbpZeroTemplate.FilmList
 
 
@@ -29,5 +30,11 @@ namespace MyCompanyName.AbpZeroTemplate.FilmList
         public virtual string PictureLink { get; set; }
 
         public virtual int Price { get; set; }
+    }
+    public class FilmConsts
+    {
+        public const int MaxNameLength = 32;
+        public const int MaxDescriptionLength = 32;
+        public const int MaxPictureLinkLength = 255;
     }
 }
